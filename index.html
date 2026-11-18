@@ -133,6 +133,10 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
   .about, .why, .cta { padding: 32px 20px; }
   .member { padding: 16px; }
 }
+@media (max-width: 900px) {
+  .team { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .member { width: 100%; max-width: 520px; margin-inline: auto; }
+}
 @media (prefers-reduced-motion: reduce) {
   .float { animation: none; }
   html { scroll-behavior: auto; }
