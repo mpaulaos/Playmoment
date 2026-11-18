@@ -107,6 +107,7 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
   .top nav { width: 100%; justify-content: space-between; gap: 14px; font-size: 15px; }
   .top nav a.nav-cta { padding-inline: 14px; }
   .team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .why-grid { gap: 16px; }
   .hero { grid-template-columns: minmax(0, 1fr); padding-block: 24px 40px; }
   .pad { order: -1; max-width: 340px; margin: 0 auto; }
   section { padding-block: 40px; }
@@ -138,14 +139,16 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
 }
 
 /* importancia */
-.why { background: var(--plum); color: #fff; border-radius: 34px; padding: 52px clamp(22px, 5vw, 56px); }
-.why .eyebrow { color: var(--aqua); }
-.why h2 { color: #fff; max-width: 20ch; }
-.why .section-sub { color: #d9cdee; }
-.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 18px; margin-top: 8px; }
-.why-item { min-width: 0; background: transparent; border: 0; border-radius: 22px; padding: 22px 0; }
+.why { background: transparent; color: var(--plum); border-radius: 0; padding: 0; }
+.why .eyebrow { color: var(--grape-deep); }
+.why h2 { color: var(--plum); max-width: 20ch; }
+.why .section-sub { color: var(--ink-soft); }
+.why-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px; margin-top: 8px; }
+.why-item { min-width: 0; background: var(--mist); border: 2px solid var(--line); border-radius: 22px; padding: 22px; }
 .why-item h3 { font-family: var(--font-display); font-weight: 600; font-size: 21px; margin: 0 0 6px; color: var(--sun); }
 .why-item p { margin: 0; color: #e8def6; }
+.why-grid:not(.light-grid) .why-item h3 { color: var(--grape-deep); }
+.why-grid:not(.light-grid) .why-item p { color: var(--ink-soft); }
 
 /* por que nosotros */
 .reasons { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: 40px; align-items: start; }
