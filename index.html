@@ -165,10 +165,10 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
 .reasons li span { color: var(--ink-soft); }
 
 /* equipo */
-.team { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
-.member { display: flex; align-items: center; gap: 14px; min-width: 0; padding: 18px 20px; background: var(--paper); border: 2px solid var(--line); border-radius: 22px; }
+.team { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; width: 100%; }
+.member { display: flex; align-items: center; gap: 14px; width: 100%; min-width: 0; min-height: 84px; padding: 18px 20px; background: var(--paper); border: 2px solid var(--line); border-radius: 22px; }
 .member svg { flex: none; width: 46px; height: 46px; }
-.member b { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.1; color: var(--grape-deep); overflow-wrap: normal; }
+.member b { font-family: var(--font-display); font-weight: 600; font-size: 22px; line-height: 1.1; color: var(--grape-deep); min-width: 0; overflow-wrap: anywhere; }
 @media (max-width: 760px) { .reasons { grid-template-columns: minmax(0, 1fr); gap: 24px; } }
 
 /* multipágina */
