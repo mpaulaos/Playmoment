@@ -1,4 +1,5 @@
 <title>PlayMoment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap">
 <style>
@@ -26,6 +27,8 @@ body {
   font-family: var(--font-body);
   font-size: 17px;
   line-height: 1.6;
+  margin: 0;
+  overflow-x: hidden;
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
   padding-block: 0;
@@ -98,9 +101,30 @@ footer { padding-block: 40px 48px; text-align: center; color: var(--ink-soft); f
 footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
 
 @media (max-width: 760px) {
+  .top { align-items: flex-start; }
+  .top nav { width: 100%; justify-content: space-between; gap: 8px; font-size: 15px; }
+  .top nav a.nav-cta { padding-inline: 14px; }
   .hero { grid-template-columns: minmax(0, 1fr); padding-block: 24px 40px; }
   .pad { order: -1; max-width: 340px; margin: 0 auto; }
-  .top nav { gap: 16px; }
+  section { padding-block: 40px; }
+  .about, .why, .cta { border-radius: 24px; }
+  .actions .btn, .actions .play { justify-content: center; }
+}
+@media (max-width: 480px) {
+  body { font-size: 16px; }
+  .top { padding-block: 14px; }
+  .top img { height: 40px; }
+  .top nav { flex-wrap: wrap; justify-content: flex-start; row-gap: 4px; }
+  .top nav a { padding-block: 2px; }
+  .hero { padding-block: 16px 28px; }
+  .lead { font-size: 17px; }
+  .btn { width: 100%; padding-inline: 20px; }
+  .actions { width: 100%; }
+  .actions .btn, .actions .play { width: 100%; }
+  .card-body { padding: 18px 18px 20px; }
+  .cover { height: 180px; }
+  .about, .why, .cta { padding: 32px 20px; }
+  .member { padding: 16px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .float { animation: none; }
