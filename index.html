@@ -107,7 +107,7 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
   .top nav { width: 100%; justify-content: space-between; gap: 14px; font-size: 15px; }
   .top nav a.nav-cta { padding-inline: 14px; }
   .team { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .member { width: 100%; flex-direction: row; align-items: center; justify-content: flex-start; }
+  .member { width: 100%; max-width: none; margin: 0; flex-direction: row; align-items: center; justify-content: flex-start; min-height: 84px; }
   .why-grid { gap: 16px; }
   .hero { grid-template-columns: minmax(0, 1fr); padding-block: 24px 40px; }
   .pad { order: -1; max-width: 340px; margin: 0 auto; }
@@ -117,7 +117,7 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
 }
 @media (max-width: 480px) {
   body { font-size: 16px; }
-  .team { grid-template-columns: minmax(0, 1fr); }
+  .team { grid-template-columns: minmax(0, 1fr); width: 100%; }
   .top { padding-block: 14px; }
   .top img { height: 40px; }
   .top nav { flex-wrap: nowrap; justify-content: space-between; gap: 12px; font-size: 14px; }
@@ -135,7 +135,7 @@ footer img { height: 34px; width: auto; display: block; margin: 0 auto 10px; }
 }
 @media (max-width: 900px) {
   .team { grid-template-columns: minmax(0, 1fr); gap: 14px; }
-  .member { width: 100%; max-width: 520px; margin-inline: auto; }
+  .member { width: 100%; max-width: none; margin-inline: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .float { animation: none; }
